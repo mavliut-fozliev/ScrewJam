@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # или любая другая ветка, которую вы используете для деплоя
+      - master
 
 jobs:
   deploy:
@@ -12,14 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18" # Версия Node.js, если необходима для ваших скриптов
-
-      - name: Build project
-        run: npm install && npm run build # Подставьте команду сборки вашего проекта
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
