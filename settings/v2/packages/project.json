@@ -1,3 +1,26 @@
 {
-  "__version__": "1.0.6"
+  "__version__": "1.0.6",
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "Layer-1"
+      },
+      {
+        "index": 2,
+        "name": "Layer-2"
+      },
+      {
+        "index": 3,
+        "name": "Layer-3"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 1,
+      "1": 2,
+      "2": 4,
+      "3": 8,
+      "4": 16
+    }
+  }
 }
